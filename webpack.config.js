@@ -38,7 +38,8 @@ module.exports = {
         new MiniCssExtractPlugin(),
     ],
         devServer: {
-            static: path.join(__dirname, 'dist'),
+           static: path.join(__dirname, 'dist'),
             hot: true,
+            watchFiles: ['src/**/*.html']
     },
 }
